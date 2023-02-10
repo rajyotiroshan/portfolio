@@ -1,0 +1,9 @@
+.right {
+    width: calc(100% - (var(--left-width)));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}h2 {
+    font-size: 2.5rem;
+    color: #014454;
+}
