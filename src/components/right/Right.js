@@ -1,33 +1,23 @@
-import './Right.css';
-
-const Right = ()=>{
-    return (
-        <section className='right'>
-            <article className='right-section'>
-                <h2>About me</h2>
-            </article>
-
-            <article className='right-section'>
-                <h2>Projects</h2>
-            </article>
-
-            <article className='right-section'>
-                <h2>Experiences</h2>
-            </article>
-
-            <article className='right-section'>
-                <h2>Certificates</h2>
-            </article>
-
-            <article className='right-section'>
-                <h2>Education</h2>
-            </article>
-
-            <article className='right-section'>
-                <h2>Contacts Me</h2>
-            </article>
-        </section>
-    )
-}
+import "./Right.css";
+import AboutMe from "./AboutMe";
+import Projects from "./Projects";
+import Experiences from "./Experiences";
+import Skills from "./Skills";
+import Certifications from "./Certifications";
+import Educations from "./Educations";
+import ContactMe from "./ContactMe";
+const Right = () => {
+  return (
+    <section className="right">
+      <AboutMe />
+      <Experiences />
+      <Projects />
+      <Skills />
+      <Certifications />
+      <Educations />
+      <ContactMe />
+    </section>
+  );
+};
 
 export default Right;
