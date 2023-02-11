@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <Left/>
-      <div className="hr-line-container"><div className="hr-line"></div></div>
+     
       <Right/>
     </>
   );
