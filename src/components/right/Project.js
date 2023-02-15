@@ -1,9 +1,29 @@
+import { useRef } from "react";
+
 const Project = () => {
+  const projRef = useRef(null);
+  const mouseEnter = (evt) => {
+    evt.stopPropagation();
+    projRef.classList.remove("proj-hover-hide");
+    projRef.classList.add("proj-hover-show");
+  };
+
+  const mouseLeave = (evt) => {
+    evt.stopPropagation();
+
+    evt.target.classList.remove("proj-hover-show");
+    evt.target.classList.add("proj-hover-hide");
+  };
   return (
-    <article className="proj">
+    <article className="proj" onMouseEnter={mouseEnter}>
       <h2 className="proj-hdr">Adopt Me</h2>
       <div className="proj-img"></div>
-      <div className="proj-hover proj-hover-hide">
+      <div
+      ref={projRef}
+        className="proj-hover proj-hover-hide"
+        
+        onMouseLeave={mouseLeave}
+      >
         <p className="proj-desc">
           A Platform where you can search for any pet available for adoption.
           You can also post a request for pet adoption.

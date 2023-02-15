@@ -3,9 +3,12 @@
   margin-left: 300px;
   justify-content: space-evenly;
 }
-
+.cont {
+  padding-left: 1rem;
+}
 .right-section {
   font-size: 1.8rem;
+  padding: 10rem 0 10rem;
 }
 h2 {
   font-size: 2.5rem;
@@ -39,11 +42,6 @@ article.proj {
 }
 
 article.proj {
-  padding: 5px;
-  border: 1px solid seagreen;
-  box-shadow: 0px 0px 12px black, 0px 0px 12px grey;
-}
-article.proj {
   max-width: 200px;
 }
 .cont.projects {
@@ -61,7 +59,10 @@ ul.proj-tech-list {
   font-size: 1.3rem;
 }
 article.proj {
-  max-width: 200px;
+  padding: 5px;
+  border: 1px solid seagreen;
+  box-shadow: 0px 0px 7px 0px #000000f7, 0px 0px 12px dimgrey;
+  width: 400px;
   margin-bottom: 10px;
   position: relative;
 }
@@ -78,4 +79,18 @@ article.proj {
 
 .proj-hover-hide {
   opacity: 0;
+}
+
+/***
+  SKILLS
+**/
+article.skill {
+  width: 80%;
+  background-color: #18a2a640;
+  margin-bottom: 5px;
+}
+.skill-name {
+  font-size: 1.5rem;
+  color: white;
+  background-color: #1a9808;
 }

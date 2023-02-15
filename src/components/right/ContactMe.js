@@ -1,6 +1,7 @@
 const ContactMe = () => {
   return (
     <article id="contactme" className="right-section">
+      <h2 className="contactme-hdr">Contact Me</h2>
       <form action="#">
         <div className="f-el">
           <label htmlFor="subj">Subject</label>

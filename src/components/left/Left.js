@@ -27,6 +27,29 @@ const Left = () => {
           Contact me
         </a>
       </nav>
+      <footer>
+        <a
+          className="social-link"
+          href="https://github.com/rajyotiroshan/portfolio"
+          target="_blank"
+        >
+          GH
+        </a>
+        <a
+          className="social-link"
+          href="https://www.linkedin.com/feed/"
+          target="_blank"
+        >
+          LIn
+        </a>
+        <a
+          className="social-link"
+          href="https://www.hackerrank.com/"
+          target="_blank"
+        >
+          HR
+        </a>
+      </footer>
     </header>
   );
 };
