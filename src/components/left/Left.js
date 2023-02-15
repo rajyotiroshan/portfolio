@@ -1,29 +1,44 @@
 import "./Left.css";
 
 const Left = () => {
+  const handleClick = (id) => () => {
+    const sec = document.getElementById(id);
+    sec.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
   return (
     <header>
       <div className="profile-pic"></div>
       <nav>
-        <a href="#aboutme" className="nav-link">
+        <a
+          href="#about-me"
+          className="nav-link"
+          onClick={handleClick("aboutme")}
+        >
           About Me
         </a>
-        <a href="#experiences" className="nav-link">
+        <a
+          href="#exp"
+          className="nav-link"
+          onClick={handleClick("experiences")}
+        >
           Experiences
         </a>
-        <a href="#projects" className="nav-link">
+        <a href="#projs" className="nav-link" onClick={handleClick("projects")}>
           Projects
         </a>
-        <a href="#skills" className="nav-link">
+        <a href="#s" className="nav-link" onClick={handleClick("skills")}>
           Skills
         </a>{" "}
-        <a href="#certs" className="nav-link">
+        <a href="#c" className="nav-link" onClick={handleClick("certs")}>
           Certifications
         </a>
-        <a href="#edu" className="nav-link">
+        <a href="#e" className="nav-link" onClick={handleClick("edu")}>
           Educations
         </a>
-        <a href="#contacts" className="nav-link">
+        <a href="#c" className="nav-link" onClick={handleClick("contactme")}>
           Contact me
         </a>
       </nav>
