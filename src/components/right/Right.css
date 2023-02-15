@@ -88,6 +88,7 @@ article.skill {
   width: 80%;
   background-color: #18a2a640;
   margin-bottom: 5px;
+  border-radius: 2px;
 }
 .skill-name {
   font-size: 1.5rem;
